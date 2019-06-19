@@ -1,7 +1,7 @@
 {
   "name": "ng-marquee",
   "version": "1.0.1",
-  "description": "Angular 6+ CSS Marquee (Alternative To HTML Marquee Tag)",
+  "description": "Angular 8+ CSS Marquee (Alternative To HTML Marquee Tag)",
   "keywords": [
     "angular",
     "ng-marquee",
@@ -9,20 +9,20 @@
     "moving text",
     "scrollling text",
     "angular 2+",
-    "angular 6"
+    "angular 8"
   ],
-  "author": "Yuvaraj",
+  "author": "henry74",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/shivarajnaidu/ng-marquee.git"
+    "url": "git+https://github.com/henry74/ng-marquee.git"
   },
   "bugs": {
-    "url": "https://github.com/shivarajnaidu/ng-marquee/issues"
+    "url": "https://github.com/henry74/ng-marquee/issues"
   },
-  "homepage": "https://github.com/shivarajnaidu/ng-marquee#readme",
+  "homepage": "https://github.com/henry74/ng-marquee#readme",
   "peerDependencies": {
-    "@angular/common": "^6.0.0-rc.0 || ^6.0.0",
-    "@angular/core": "^6.0.0-rc.0 || ^6.0.0"
+    "@angular/common": "^8.0.0",
+    "@angular/core": "^8.0.0"
   }
 }
