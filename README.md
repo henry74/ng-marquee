@@ -1,15 +1,17 @@
-# ng-marquee
-Angular 2+ Component For Marquee Text
+# ng-marquee-improved
 
-[![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://paypal.me/shivarajnaidu)
+Angular 7/8 CSS-based Scrolling Marquee (e.g. stock/news ticker, scrolling marquee)
 
-( This Library Is Using Angular CLI's Library Generation Command )
+[originally forked from [https://github.com/shivarajnaidu/ng-marquee](https://github.com/shivarajnaidu/ng-marquee) to address this [issue](https://github.com/shivarajnaidu/ng-marquee/issues/2)]
 
 ## How to:
 
-### Install npm 
-```
-   npm install ng-marquee --save
+### Install using npm/yarn
+
+```bash
+   npm install ng-marquee-improved --save
+   # OR
+   yarn add ng-marquee-improved
 ```
 
 ### Simple Example
@@ -17,44 +19,42 @@ Angular 2+ Component For Marquee Text
 #### Import Module
 
 ```ts
-import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
-import { NgMarqueeModule } from 'ng-marquee';
+import { BrowserModule } from "@angular/platform-browser";
+import { NgModule } from "@angular/core";
+import { NgMarqueeModule } from "ng-marquee-improved";
 
-import { AppComponent } from './app.component';
+import { AppComponent } from "./app.component";
 
 @NgModule({
-  declarations: [
-    AppComponent
-  ],
-  imports: [
-    BrowserModule,
-    NgMarqueeModule
-  ],
+  declarations: [AppComponent],
+  imports: [BrowserModule, NgMarqueeModule],
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
-
+export class AppModule {}
 ```
 
-#### Use Component
+#### Component Usage
+
 ```html
 <ng-marquee>
-    <mark>Hello, World.... Find Me @ <a href="https://www.linkedin.com/in/shivarajnaidu/" target="__blank"> https://www.linkedin.com/in/shivarajnaidu/ (Yuvaraj)</a></mark>
+  <mark>Hello, World....</mark>
 </ng-marquee>
 ```
 
 ## API
 
-### input property
+### Input Properties
 
 ###
+
+`marqueeId` property should be a unique string across all instances of ng-marquee in the DOM
+
 `duration` property available for controlling speed of text movement
 (default value is 25 in seconds)
 
 ```html
-<ng-marquee duration="30">
-    <mark>Hello, World.... Find Me @ <a href="https://www.linkedin.com/in/shivarajnaidu/" target="__blank"> https://www.linkedin.com/in/shivarajnaidu/ (Yuvaraj)</a></mark>
+<ng-marquee duration="30" marqueeId="qwerty123">
+  <mark>Hello, World....</mark>
 </ng-marquee>
 ```
